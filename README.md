@@ -30,6 +30,8 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 
 ## 📁 Project Structure
 
+---
+
 
 ---
 
@@ -38,31 +40,38 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 1. Ensure you have a valid ODBC DSN configured (e.g., `YourDSN`)
 2. Clone this repository
 3. Install dependencies:
-   ```
-   pip install pandas pyodbc openpyxl
-４. Run the script:
-   ```bash
-   python src/generate_report.py
+
+    ```bash
+    pip install pandas pyodbc openpyxl
+    ```
+
+4. Run the script:
+
+    ```bash
+    python src/generate_report.py
+    ```
 
 5. The script will:
-　　Query the database
-　　Process and aggregate prescription data
-　　Export the result to Excel in your home directory (~/sql_reports/)
-　　Log the duration and row count
+    - Query the database  
+    - Process and aggregate prescription data  
+    - Export the result to Excel in your home directory (`~/sql_reports/`)  
+    - Log the duration and row count
 
-📊 Sample Output
-Visit_Date | Session | Prescription_Count | Item_Count
-1120101 | Morning | 125 | 378
-1120101 | Afternoon | 92 | 287
-... | ... | ... | ...
+---
 
-All dates follow the Minguo calendar format (1120101 = 2023-01-01)
+## 📊 Sample Output
+
+“| Visit\_Date | Session | Prescription\_Count | Item\_Count | | --- | --- | --- | --- | | 1120101 | Morning | 125 | 378 | | 1120101 | Afternoon | 92 | 287 | | ... | ... | ... | ... |”
 
 
-##　🗂 Data Schema (Anonymized)
-pharmacy_orders: Medication prescription records
+> All dates follow the Minguo calendar format (`1120101` = `2023-01-01`)
 
-outpatient_visits: Patient registration metadata
+---
 
-⚠️ All table and database names in this repo are anonymized for demonstration purposes.
-No actual patient-identifiable data is used or exported.
+## 🗂 Data Schema (Anonymized)
+
+- `pharmacy_orders`: Medication prescription records  
+- `outpatient_visits`: Patient registration metadata
+
+> ⚠️ All table and database names in this repo are anonymized for demonstration purposes.  
+> No actual patient-identifiable data is used or exported.
