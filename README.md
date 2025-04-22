@@ -32,9 +32,6 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 
 ---
 
-
----
-
 ## ▶️ How to Use
 
 1. Ensure you have a valid ODBC DSN configured (e.g., `YourDSN`)
