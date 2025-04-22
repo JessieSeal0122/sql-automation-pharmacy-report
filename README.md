@@ -61,8 +61,11 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 
 ## 📊 Sample Output
 
-“| Visit\_Date | Session | Prescription\_Count | Item\_Count | | --- | --- | --- | --- | | 1120101 | Morning | 125 | 378 | | 1120101 | Afternoon | 92 | 287 | | ... | ... | ... | ... |”
-
+| Visit_Date | Session   | Prescription_Count | Item_Count |
+|------------|-----------|--------------------|------------|
+| 1120101    | Morning   | 125                | 378        |
+| 1120101    | Afternoon | 92                 | 287        |
+| ...        | ...       | ...                | ...        |
 
 > All dates follow the Minguo calendar format (`1120101` = `2023-01-01`)
 
@@ -73,5 +76,5 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 - `pharmacy_orders`: Medication prescription records  
 - `outpatient_visits`: Patient registration metadata
 
-> ⚠️ All table and database names in this repo are anonymized for demonstration purposes.  
+> ⚠️ All table and database names in this repo are anonymized for demonstration purposes.
 > No actual patient-identifiable data is used or exported.
