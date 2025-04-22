@@ -30,6 +30,14 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 
 ## 📁 Project Structure
 
+```
+/sql-automation-pharmacy-report/
+├── src/
+│   └── generate_report.py         ← main script
+├── README.md                      ← project documentation
+├── LICENSE                        ← MIT license
+└── sql_reports/                   ← output folder (auto-created on run)
+```
 ---
 
 ## ▶️ How to Use
