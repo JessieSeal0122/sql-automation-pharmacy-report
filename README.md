@@ -46,7 +46,7 @@ It connects via ODBC, runs a multi-step SQL query using CTEs, and exports a dail
 3. Install dependencies:
 
     ```bash
-    pip install pandas pyodbc openpyxl
+    pip install -r requirements.txt
     ```
 
 4. Run the script:
